@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images"
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="loader hidden" id="loader"></div>
+
+      <ul class="gallery" id="gallery"></ul>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

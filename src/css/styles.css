@@ -9,7 +9,6 @@ body {
   justify-content: center;
   gap: 10px;
   margin-bottom: 30px;
-  
 }
 
 .search-form input {
@@ -59,13 +58,6 @@ body {
   transform: scale(1.03);
 }
 
-.info-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-  margin: 0;
-}
 
 .loader {
   width: 48px;
@@ -101,6 +93,8 @@ body {
   background-color: #4e75ff;
   color: #ffffff;
   cursor: pointer;
+  border: none; 
+}
 
   .info {
     display: flex;
@@ -108,14 +102,26 @@ body {
     padding: 8px 12px;
   }
 
-  .info-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
-    margin: 0;
+/* Sayıların ve başlıkların alt alta düzgün durması için */
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
 }
+ 
 
 .info-item b {
   color: #2e2f42;
+  font-weight: 600;
+}
+
+.info-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 8px;
+  margin-top: auto;
+  border-top: 1px solid #efefef
 }
